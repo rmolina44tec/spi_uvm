@@ -1,0 +1,5 @@
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.mem_agnt.sequencer STREAM:605}
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.mem_agnt.sequencer STREAM:605}
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.spi_agnt.sequencer STREAM:605}
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.spi_agnt.sequencer STREAM:605}
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.spi_agnt.sequencer STREAM:605}

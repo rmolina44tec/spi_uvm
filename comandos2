@@ -1,0 +1,14 @@
+#Mismos pasos para correr un ambiente UVM, la diferencia es agregar la ubicación de la biblioteca:
+
+vcs -full64 -ova_cov -cm line+cond+fsm+tgl+path+assert+branch+property_path -cm_pp -cm_report unencrypted_hierarchies+svpackages+noinitial -lca -debug_all -timescale=1ns/1ns +vcs+flush+all +warn=all -debug_access+r -sverilog +incdir+$UVM_HOME/src $UVM_HOME/src/uvm.sv $UVM_HOME/src/dpi/uvm_dpi.cc -CFLAGS -DVCS ../TEC_RISCV/SPI/top_spi.sv testbench2.sv
+
+#Se agregan opciones como la semilla y el nombre del test al invocar el ejecutable
+
+./simv +ntb_random_seed=1 -cm line+cond+fsm+tgl+assert+branch+property_path +UVM_TESTNAME=mem_wr_rd_test
+
+#Interfaz grafica de Waveform
+dve -full64 & 
+
+#Interfaz grafica de Coverage:
+dve -full64 -cov -covdir simv.vdb &
+

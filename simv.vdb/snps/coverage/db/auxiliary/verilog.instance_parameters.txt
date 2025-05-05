@@ -1,0 +1,5 @@
+tbench_top.DUT.spi1.END3
+tbench_top.DUT.spi1.END14
+tbench_top.DUT.spi1.LOAD1
+tbench_top.DUT.spi1.OPER2
+tbench_top.DUT.spi1.START0
